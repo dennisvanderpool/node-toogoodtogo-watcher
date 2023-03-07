@@ -1,8 +1,9 @@
 {
   "name": "toogoodtogo-watcher",
-  "version": "3.9.1",
+  "version": "4.0.2",
   "description": "Node.js cli tool for monitoring your favorite TooGoodToGo businesses.",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "keywords": [
     "TooGoodToGo",
     "notifications",
@@ -24,27 +25,26 @@
     "toogoodtogo-watcher": "index.js"
   },
   "dependencies": {
-    "conf": "^10.0.3",
+    "conf": "^11.0.1",
     "editor": "^1.0.0",
-    "got": "^11.8.2",
+    "got": "^12.5.3",
     "lodash": "^4.17.21",
-    "moment": "^2.29.1",
-    "node-notifier": "^10.0.0",
-    "rxjs": "^7.4.0",
-    "telegraf": "^4.4.2",
-    "tough-cookie": "^4.0.0",
-    "yargs": "^17.2.1"
+    "moment": "^2.29.4",
+    "node-notifier": "^10.0.1",
+    "rxjs": "^7.8.0",
+    "telegraf": "^4.11.2",
+    "tough-cookie": "^4.1.2",
+    "yargs": "^17.7.1"
   },
   "scripts": {
-    "lint": "prettier --write . && eslint --cache --fix .",
-    "prepare": "husky install"
+    "lint": "prettier --write . && eslint --cache --fix ."
   },
   "devDependencies": {
-    "eslint": "^8.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1"
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
   },
   "husky": {
     "hooks": {
